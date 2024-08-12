@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: green; /* Фон для лучшей видимости */
             background-color: white; /* Фон для лучшей видимости */
         }
 
@@ -20,7 +21,6 @@
             position: relative;
             margin: 20px;
         }
-
         .roof {
             width: 0;
             height: 0;
@@ -30,7 +30,6 @@
             top: -150px; /* -50px * 3 */
             left: 0;
         }
-
         .door {
             width: 90px; /* 30px * 3 */
             height: 150px; /* 50px * 3 */
@@ -38,60 +37,47 @@
             bottom: 0;
             left: calc(50% - 45px); /* 15px * 3 */
         }
-
         .window {
             width: 60px; /* 20px * 3 */
             height: 60px; /* 20px * 3 */
             position: absolute;
             top: 60px; /* 20px * 3 */
         }
-
         /* Настройка первого домика */
         #house1 {
             background-color: blue;
         }
-
         #house1 .roof {
             border-bottom: 150px solid pink; /* 50px * 3 */
         }
-
         #house1 .door {
             background-color: #654321;
         }
-
         #house1 .window {
             background-color: yellow;
         }
-
         #house1 .window.left {
             left: 30px; /* 10px * 3 */
         }
-
         #house1 .window.right {
             right: 30px; /* 10px * 3 */
         }
-
         /* Настройка второго домика */
         #house2 {
-            background-color: #4682B4;
+            background-color: red;
         }
-
         #house2 .roof {
-            border-bottom: 150px solid #5F9EA0; /* 50px * 3 */
+            border-bottom: 150px solid black; /* 50px * 3 */
         }
-
         #house2 .door {
             background-color: #2F4F4F;
         }
-
         #house2 .window {
             background-color: yellow;
         }
-
         #house2 .window.left {
             left: 30px; /* 10px * 3 */
         }
-
         #house2 .window.right {
             right: 30px; /* 10px * 3 */
         }
@@ -104,7 +90,6 @@
         <div class="window left"></div>
         <div class="window right"></div>
     </div>
-
     <div id="house2" class="house">
         <div class="roof"></div>
         <div class="door"></div>
