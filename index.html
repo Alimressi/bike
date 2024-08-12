@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Два домика</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Фон для лучшей видимости */
+        }
+
+        .house {
+            width: 300px; /* 100px * 3 */
+            height: 300px; /* 100px * 3 */
+            position: relative;
+            margin: 20px;
+        }
+
+        .roof {
+            width: 0;
+            height: 0;
+            border-left: 150px solid transparent; /* 50px * 3 */
+            border-right: 150px solid transparent; /* 50px * 3 */
+            position: absolute;
+            top: -150px; /* -50px * 3 */
+            left: 0;
+        }
+
+        .door {
+            width: 90px; /* 30px * 3 */
+            height: 150px; /* 50px * 3 */
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 45px); /* 15px * 3 */
+        }
+
+        .window {
+            width: 60px; /* 20px * 3 */
+            height: 60px; /* 20px * 3 */
+            position: absolute;
+            top: 60px; /* 20px * 3 */
+        }
+
+        /* Настройка первого домика */
+        #house1 {
+            background-color: #8B4513;
+        }
+
+        #house1 .roof {
+            border-bottom: 150px solid #A52A2A; /* 50px * 3 */
+        }
+
+        #house1 .door {
+            background-color: #654321;
+        }
+
+        #house1 .window {
+            background-color: yellow;
+        }
+
+        #house1 .window.left {
+            left: 30px; /* 10px * 3 */
+        }
+
+        #house1 .window.right {
+            right: 30px; /* 10px * 3 */
+        }
+
+        /* Настройка второго домика */
+        #house2 {
+            background-color: #4682B4;
+        }
+
+        #house2 .roof {
+            border-bottom: 150px solid #5F9EA0; /* 50px * 3 */
+        }
+
+        #house2 .door {
+            background-color: #2F4F4F;
+        }
+
+        #house2 .window {
+            background-color: yellow;
+        }
+
+        #house2 .window.left {
+            left: 30px; /* 10px * 3 */
+        }
+
+        #house2 .window.right {
+            right: 30px; /* 10px * 3 */
+        }
+    </style>
+</head>
+<body>
+    <div id="house1" class="house">
+        <div class="roof"></div>
+        <div class="door"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+    </div>
+
+    <div id="house2" class="house">
+        <div class="roof"></div>
+        <div class="door"></div>
+        <div class="window left"></div>
+        <div class="window right"></div>
+    </div>
+</body>
+</html>
